@@ -17,34 +17,48 @@ public class Ejercicio15 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner fibo = new Scanner(System.in);
+        
+    
+    
+    Scanner fibo = new Scanner(System.in);
 
-        double ingresado;
-        double resultado=1;
-
-        double numero2 = 0;
-        double resultado2=1;
+        int ingresado;
+        int acumulador = 0;
+       String cero ="1";
+        int numero2 = 1;
+        int numero1=0;
         System.out.println("Ingrese un entero");
         ingresado = fibo.nextInt();
         
-        for (resultado = 1; resultado < resultado2; resultado++) {
+        if (ingresado>=1) {
+            System.out.println("0");
+            System.out.println("1");
+        }
+        for (int i = 0; i <= ingresado; i++) {
             
-             
-            for (resultado2 = 1; resultado2 < ingresado; resultado2++) {
-                
-                
-                resultado = numero2 + resultado;
-            resultado2 = numero2 + resultado;
-             resultado2 = numero2;
-        System.out.println(resultado2);
-             System.out.println(resultado);
-                
+           acumulador=numero1;
+           numero1=numero2;
+           numero2=acumulador+numero1;
            
             
-            }
+            
+        if(numero2<=ingresado)
+        {
+            
+            System.out.println(numero2);
+        }
+        
+        if (numero2>=ingresado) {
+            i=numero2;
+        }
         
         
-        
-        }}}
+        }
+    
+    
+    
+    
+    
+    }}
 
 
