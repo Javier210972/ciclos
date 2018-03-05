@@ -20,24 +20,36 @@ public class Solucion10 {
         Scanner Mostrar = new Scanner(System.in);
         String texto;
         int largo;
-        int i;
-        String letra;
+        int letras;
+      
+       
+        String C;
+        String C2;
+        String C3;
 
-        System.out.println("Escriba un texto");
+        System.out.println("1Escriba un texto");
         texto = Mostrar.nextLine();
         largo = texto.length();
         
 
-        for (i = 0; i < largo; i++) {
-            letra = texto.substring(i,i+1);
-            System.out.println(letra);
-        }
+        int i;
+          for (i = largo-2; i>= 0; i-=2) {
+             
+           C=texto.substring(i,i+2);
+              System.out.println(C);
+              
+           
+          }
+       
+     letras =largo%2;
+//        if (letras==0) {
+//            System.out.println("");
+//        }
+          if (largo!=0){
+            C=texto.substring(0,1);
+              System.out.println(C);
         
-        System.out.println("decreciente ");
-        for (int j = texto.length()-1; j >= 0; j--) {
-         letra=texto.substring(j,j+1);
-            System.out.println(letra);
-        }
+          }
         
     }
     
