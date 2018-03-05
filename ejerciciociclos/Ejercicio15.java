@@ -18,9 +18,7 @@ public class Ejercicio15 {
      */
     public static void main(String[] args) {
         
-    
-    
-    Scanner fibo = new Scanner(System.in);
+   Scanner fibo = new Scanner(System.in);
 
         int ingresado;
         int acumulador = 0;
@@ -54,10 +52,7 @@ public class Ejercicio15 {
         
         
         }
-    
-    
-    
-    
+       
     
     }}
 
