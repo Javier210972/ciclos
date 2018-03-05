@@ -18,7 +18,7 @@ public class Ejercicio15 {
      */
     public static void main(String[] args) {
         
-   Scanner fibo = new Scanner(System.in);
+  Scanner fibo = new Scanner(System.in);
 
         int ingresado;
         int acumulador = 0;
@@ -29,8 +29,8 @@ public class Ejercicio15 {
         ingresado = fibo.nextInt();
         
         if (ingresado>=1) {
-            System.out.println("0");
-            System.out.println("1");
+            System.out.print("0,");
+            System.out.print("1");
         }
         for (int i = 0; i <= ingresado; i++) {
             
@@ -42,16 +42,19 @@ public class Ejercicio15 {
             
         if(numero2<=ingresado)
         {
+            System.out.print(",");
+            System.out.print(numero2);
             
-            System.out.println(numero2);
         }
-        
+            
         if (numero2>=ingresado) {
             i=numero2;
         }
         
-        
+           
         }
+        
+        System.out.println("");
        
     
     }}
