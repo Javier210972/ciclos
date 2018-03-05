@@ -17,11 +17,11 @@ public class Solucion9 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Scanner Mostrar = new Scanner(System.in);
+        Scanner Mostrar = new Scanner(System.in);
         String texto;
         int largo;
         int letras;
-     
+      
        
         String C;
         String C2;
@@ -40,14 +40,15 @@ public class Solucion9 {
               
            
           }
-        letras =largo%3;
-        if (letras==0) {
-            System.out.println("");
-        }
-          /*if (residuo!=0)
+       
+     letras =largo%3;
+//        if (letras==0) {
+//            System.out.println("");
+//        }
+          if (largo!=0){
             C=texto.substring(largo-letras,largo);
-        sout"C"
+              System.out.println(C);
         
-        */
+          }
     }
 }        
