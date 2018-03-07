@@ -18,17 +18,21 @@ public class Ejercicio15 {
      */
     public static void main(String[] args) {
         
-  Scanner fibo = new Scanner(System.in);
+  
+    Scanner fibo = new Scanner(System.in);
 
         int ingresado;
         int acumulador = 0;
-       String cero ="1";
+       
         int numero2 = 1;
         int numero1=0;
         System.out.println("Ingrese un entero");
         ingresado = fibo.nextInt();
         
-        if (ingresado>=1) {
+        if (ingresado==0) {
+            System.out.println("0");
+        }
+       else if (ingresado>=1) {
             System.out.print("0,");
             System.out.print("1");
         }
@@ -55,7 +59,7 @@ public class Ejercicio15 {
         }
         
         System.out.println("");
-       
+               
     
     }}
 
