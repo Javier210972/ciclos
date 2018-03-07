@@ -15,32 +15,37 @@ public class Solucion12 {
 
     public static void main(String[] args) {
 
-        Scanner decimal = new Scanner(System.in);
+      Scanner decimal = new Scanner(System.in);
         String cadena;
         String ingreso;
         int largo;
-        int suma = 0;
+        int acumulador = 1;
         int i;
-        int cero = 0;
-        int cero2 = 0;
+        int uno=1;
 
         System.out.println("ingrese un numero binario");
         ingreso = decimal.nextLine();
         largo = ingreso.length();
-
-        for (i = 1; i <= ingreso.length(); i+=2) {
-
-            cadena = ingreso.substring(0,1);
-                 suma=suma+i;
-            if ("1".equals(cadena)) {
-                System.out.println(suma);
-            } 
-            if ("0".equals(cadena)) {
-                suma=cero+cero2;
-                   
-                
-
+      if (largo==1) {
+                System.out.println(uno);
             }
+        for (i = 2; i < ingreso.length(); i=i+2) {
+
+            cadena = ingreso.substring(largo-1,largo);
+            
+            if (largo==1) {
+                if (largo>1)
+                {
+                acumulador = acumulador + i;
+                    System.out.println(acumulador);
+                }
+            }
+            
+            if ("0".equals(cadena)) {
+                
+            }
+                    
+                    
         }
     }
 }
