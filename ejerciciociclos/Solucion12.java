@@ -14,38 +14,39 @@ import java.util.Scanner;
 public class Solucion12 {
 
     public static void main(String[] args) {
-
-      Scanner decimal = new Scanner(System.in);
+ Scanner decimal = new Scanner(System.in);
         String cadena;
-        String ingreso;
+        String Binario;
         int largo;
         int acumulador = 1;
         int i;
         int uno=1;
-
+        int exp=0;
+        double operacion;
+        double suma = 0;
+          String digito;
+     
+// i es posicion de la cadena
         System.out.println("ingrese un numero binario");
-        ingreso = decimal.nextLine();
-        largo = ingreso.length();
-      if (largo==1) {
-                System.out.println(uno);
-            }
-        for (i = 2; i < ingreso.length(); i=i+2) {
-
-            cadena = ingreso.substring(largo-1,largo);
-            
-            if (largo==1) {
-                if (largo>1)
-                {
-                acumulador = acumulador + i;
-                    System.out.println(acumulador);
-                }
+        Binario = decimal.nextLine();
+        largo = Binario.length();
+           exp=largo;
+        for (int j = 0; j < largo; j++) {
+            exp = exp-1;
+            digito=Binario.substring(j,j+1);
+            System.out.println(digito);
+            if (digito.equals("1")) {
+                operacion =Math.pow(2, exp);
+                suma = operacion + suma;
             }
             
-            if ("0".equals(cadena)) {
-                
+            
+           // System.out.println(j+","+(j+1)+"  Exponente "+exp);
+        
+           
             }
-                    
-                    
-        }
+        System.out.println(Binario+" Es igual a: "+suma);            
+//cadena = String.valueOf(residuo);
+      
     }
 }
