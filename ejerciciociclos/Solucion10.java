@@ -17,7 +17,7 @@ public class Solucion10 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner Mostrar = new Scanner(System.in);
+      Scanner Mostrar = new Scanner(System.in);
         String texto;
         int largo;
         int letras;
@@ -27,7 +27,7 @@ public class Solucion10 {
         String C2;
         String C3;
 
-        System.out.println("1Escriba un texto");
+        System.out.println("Escriba un texto");
         texto = Mostrar.nextLine();
         largo = texto.length();
         
@@ -45,12 +45,11 @@ public class Solucion10 {
 //        if (letras==0) {
 //            System.out.println("");
 //        }
-          if (largo!=0){
+          if (letras!=0){
             C=texto.substring(0,1);
               System.out.println(C);
         
           }
-        
     }
     
 }
